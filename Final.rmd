@@ -161,5 +161,18 @@ The confidence interval is 7-26% far lower than 50%. We can say that this is not
 
 ## Druggies
 
+```{r}
+barchartGC(~infected + treatment,data=drugUser)
+barchartGC(~infected + treatment,data=drugUser, type="percent")
+```
+
+### Graphical Descriptive Results
+
+```{r}
+barchartGC(~infected + treatment,data=drugUser)
+barchartGC(~infected + treatment,data=drugUser, type="percent")
+```
+
+The presented bar chart depicts the graphical outcomes for individuals identified as drug users and their likelihood of contracting Covid-19 based on their vaccination status. The left side indicates positive cases, while the right side shows negative cases. Notably, in this scenario, individuals who had Covid-19 were five to six times more likely to have received the vaccine rather than the placebo. This observation raises the possibility that drug users may have a heightened predisposition to contracting Covid-19, potentially due to weakened immune systems or a reverse effect of the vaccination when combined with drugs in a person's system. However, drawing definitive conclusions on this matter would necessitate a separate and focused study.
 
 # Overall Results and Conclusions
