@@ -83,7 +83,17 @@ barchartGC(~infected + treatment,data=female, type="percent")
 
 Presented above is a bar chart that illustrates the graphical outcomes exclusively for females, based on the collected data. The comparison focuses on the rates of contracting Covid-19 relative to vaccination status, with the left side representing women who contracted the virus and the right side depicting women who did not. It is evident that approximately one-third more of the individuals in the placebo group contracted Covid-19, while the percentage of those who did not contract the virus remains closely aligned.
 
+### Numerical Descriptive Results
 
+```{r}
+female <- xtabs(~infected + treatment, data=female)
+rowPerc(female)
+colPerc(female)
+```
+
+The numerical findings reinforce the insights gleaned from the graphical results. In the placebo group, Covid was contracted approximately 60% of the time, while the vaccinated group experienced a 40% contraction rate. It is apparent that the vaccine demonstrates general effectiveness in this testing scenario, albeit with a lower efficacy compared to male participants.
+
+### Inferential Results
 ## LGBTQ
 
 
