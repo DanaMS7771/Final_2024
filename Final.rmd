@@ -209,3 +209,21 @@ cat("\n","Condifence interval for Drug Users: ",drugLow," to ",drugHigh)
 The data shows that the confidence interval is 4-21%, which is far lower than 50%. This means we can say that  this is also not a very good vaccine.
 
 # Overall Results and Conclusions
+
+Upon examining all categories, the rejection of the Null Hypothesis is evident, albeit for diverse reasons. Certain groups demonstrated favorable outcomes where the vaccine proved effective, lowering the risk of contracting Covid. Conversely, other groups seemed to face an elevated risk upon receiving the vaccine. The exact cause for these disparities remains unclear from the data. An important point in the data, heterosexual men and women seem to experience benefits from the vaccine, placing them in a lower-risk category. In contrast, the LGBTQ and Drug User populations exhibit notably adverse outcomes from the vaccine.
+
+## Males
+
+Analysis of the data shows that the male group exhibited the most positive outcomes from the vaccine. Both percentage charts and bar charts indicate that men are less likely to contract Covid if they receive the vaccine. Statistically significant differences, supported by small P-Values and high Chi-Squared statistics, lead us to reject the Null Hypothesis in favor of the alternative, affirming the effectiveness of the vaccine in this group.
+
+## Females
+
+Examination of the data demonstrates positive outcomes for the female group from the vaccine. Similar to males, percentage charts and bar charts show a reduced likelihood of contracting Covid for women who receive the vaccine. Despite being less effective than in the male group, statistical significance, as reflected in small P-Values and high Chi-Squared statistics, allows us to reject the Null Hypothesis, confirming the vaccine's effectiveness in this group.
+
+## LGBTQ
+
+Data analysis reveals negative outcomes for the LGBTQ group from the vaccine. Both percentage charts and bar charts indicate an increased likelihood of contracting Covid for LGBTQ individuals who receive the vaccine. The statistically significant differences, with small P-Values and high Chi-Squared statistics, lead to rejecting the Null Hypothesis, emphasizing that the vaccine is not effective in this group and may even elevate their risk.
+
+## Drug Users
+
+Examination of the data for the Drug User group exposes the least favorable outcomes from the vaccine. Both percentage charts and bar charts highlight a higher likelihood of contracting Covid for drug users who receive the vaccine. The statistically significant differences, marked by small P-Values and high Chi-Squared statistics, lead to rejecting the Null Hypothesis. The vaccine proves ineffective in this group and appears to place them at an elevated risk, surpassing even the heightened risk observed in the LGBTQ category.
