@@ -126,7 +126,15 @@ barchartGC(~infected + treatment,data=lgbtq, type="percent")
 
 Displayed above is a bar chart illustrating the graphical outcomes exclusively for drug users derived from the dataset. The comparison involves the incidence of contracting Covid-19 based on vaccination status, with the left side depicting individuals who contracted Covid-19 and the right side representing those who did not. Once more, it is evident that a significantly higher number of individuals in the vaccinated group contracted Covid-19, while the non-contracted Covid-19 group shows a close correlation. Considering the sample size, the likelihood of this occurrence being solely due to chance is improbable.
 
+### Numerical Results
 
+```{r}
+tableLGBTQ <- xtabs(~infected + treatment, data=lgbtq)
+rowPerc(tableLGBTQ)
+colPerc(tableLGBTQ)
+```
+
+The numerical results build on what the graphical results were showing. The placebo group contracted Covid approximately 60% of the time where the vaccinated group contracted Covid 40% of the time. We can see that the vaccine is generally effective in this testing scenario, although it is less effective then the male participants.
 
 ## Druggies
 
