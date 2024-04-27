@@ -136,6 +136,18 @@ colPerc(tableLGBTQ)
 
 The numerical results build on what the graphical results were showing. The placebo group contracted Covid approximately 60% of the time where the vaccinated group contracted Covid 40% of the time. We can see that the vaccine is generally effective in this testing scenario, although it is less effective then the male participants.
 
+### Inferential Results
+
+```{r}
+chisq.test(tableLGBTQ)
+chisqtestGC(tableLGBTQ)
+lgbtqFisher <- fisher.test(tableLGBTQ)
+lgbtqFisher
+```
+
+The Chi Squared test shows that the p-value for the tested data is much smaller than the general use point of 0.05. In fact, it is 0.00000006668, which indicates that there is a difference in the data. The Chi-Squared statistic is also 29, being larger than our degrees of freedom of one from this data. The odds of an unvaccinated person contracting Covid in this group are about 1:5.
+
+### Confidence Interval
 ## Druggies
 
 
