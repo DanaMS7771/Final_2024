@@ -103,6 +103,18 @@ femaleFisher
 
   The results of the Chi-Squared test reveal a P-value for the tested data that is below the commonly accepted threshold of 0.05; in fact, it is 0.0002732, a small value signifying a significant difference in the data. The Chi-Squared statistic is 13, surpassing our degrees of freedom of one in this dataset. Additionally, the odds of an unvaccinated woman contracting Covid are 1.5 times higher than those of a woman with the vaccine.
 
+### Confidence Interval
+
+```{r}
+oddsFemale = femaleFisher$estimate/(femaleFisher$estimate +1)*100
+print(oddsFemale)
+femaleLow=(femaleFisher$conf.int[1]/(femaleFisher$conf.int[1]+1))*100
+femaleHigh=(femaleFisher$conf.int[2]/(femaleFisher$conf.int[2]+1))*100
+cat("\n","Condifence interval for Females: ",femaleLow," to ",femaleHigh)
+```
+
+We see that the confidence interval is >50% and includes the 60% threshold, it is less effective here than in the male group but still a good vaccine.
+
 ## LGBTQ
 
 
