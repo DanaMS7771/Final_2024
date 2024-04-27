@@ -94,6 +94,15 @@ colPerc(female)
 The numerical findings reinforce the insights gleaned from the graphical results. In the placebo group, Covid was contracted approximately 60% of the time, while the vaccinated group experienced a 40% contraction rate. It is apparent that the vaccine demonstrates general effectiveness in this testing scenario, albeit with a lower efficacy compared to male participants.
 
 ### Inferential Results
+```{r}
+chisq.test(female)
+chisqtestGC(female)
+femaleFisher <- fisher.test(female)
+femaleFisher
+```
+
+  The results of the Chi-Squared test reveal a P-value for the tested data that is below the commonly accepted threshold of 0.05; in fact, it is 0.0002732, a small value signifying a significant difference in the data. The Chi-Squared statistic is 13, surpassing our degrees of freedom of one in this dataset. Additionally, the odds of an unvaccinated woman contracting Covid are 1.5 times higher than those of a woman with the vaccine.
+
 ## LGBTQ
 
 
