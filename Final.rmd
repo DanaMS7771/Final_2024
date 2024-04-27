@@ -148,6 +148,17 @@ lgbtqFisher
 The Chi Squared test shows that the p-value for the tested data is much smaller than the general use point of 0.05. In fact, it is 0.00000006668, which indicates that there is a difference in the data. The Chi-Squared statistic is also 29, being larger than our degrees of freedom of one from this data. The odds of an unvaccinated person contracting Covid in this group are about 1:5.
 
 ### Confidence Interval
+
+```{r}
+oddsLGBTQ = lgbtqFisher$estimate/(lgbtqFisher$estimate +1)*100
+print(oddsLGBTQ)
+lgbtqLow=(lgbtqFisher$conf.int[1]/(lgbtqFisher$conf.int[1]+1))*100
+lgbtqHigh=(lgbtqFisher$conf.int[2]/(lgbtqFisher$conf.int[2]+1))*100
+cat("\n","Condifence interval for LGBTQ: ",lgbtqLow," to ",lgbtqHigh)
+```
+
+The confidence interval is 7-26% far lower than 50%. We can say that this is not a very good vaccine.
+
 ## Druggies
 
 
