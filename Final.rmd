@@ -196,4 +196,16 @@ drugFisher
 
 The results of the Chi-Squared test reveal a highly significant finding, with a P value of $2.842\times10^{-9}$—considerably smaller than the commonly used threshold of 0.05. This small P value suggests a significant difference in the data. Additionally, the Chi-Squared statistic, standing at 35, surpasses the degrees of freedom (one) for this dataset. In this group, the likelihood of an unvaccinated individual contracting Covid is approximately 1 in 8.
 
+### Confidence Interval
+
+```{r}
+oddsDrug = drugFisher$estimate/(drugFisher$estimate +1)*100
+print(oddsDrug)
+drugLow=(drugFisher$conf.int[1]/(drugFisher$conf.int[1]+1))*100
+drugHigh=(drugFisher$conf.int[2]/(drugFisher$conf.int[2]+1))*100
+cat("\n","Condifence interval for Drug Users: ",drugLow," to ",drugHigh)
+```
+
+The data shows that the confidence interval is 4-21%, which is far lower than 50%. This means we can say that  this is also not a very good vaccine.
+
 # Overall Results and Conclusions
