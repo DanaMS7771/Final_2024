@@ -74,6 +74,14 @@ The confidence interval is >50% with a normal vaccine threshold of >60%. This co
 
 ## Females
 
+### Graphical Descriptive Results
+
+```{r}
+barchartGC(~infected + treatment,data=female)
+barchartGC(~infected + treatment,data=female, type="percent")
+```
+
+Presented above is a bar chart that illustrates the graphical outcomes exclusively for females, based on the collected data. The comparison focuses on the rates of contracting Covid-19 relative to vaccination status, with the left side representing women who contracted the virus and the right side depicting women who did not. It is evident that approximately one-third more of the individuals in the placebo group contracted Covid-19, while the percentage of those who did not contract the virus remains closely aligned.
 
 
 ## LGBTQ
