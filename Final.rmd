@@ -185,4 +185,15 @@ colPerc(tableDrug)
 
 The numerical findings complement the insights derived from the graphical representation. In the placebo group, COVID contraction occurred approximately 10% of the time, while the vaccinated group experienced Covid contraction 90% of the time. Contrary to expectations, the vaccine appears to be ineffective in this testing scenario and, in fact, demonstrates an inverse effectiveness, seemingly elevating the risk of Covid contraction in this group. The adverse effects observed in this group surpass even those experienced by the already negatively affected LGBTQ group.
 
+### Inferential Results
+
+```{r}
+chisq.test(tableDrug)
+chisqtestGC(tableDrug)
+drugFisher <- fisher.test(tableDrug)
+drugFisher
+```
+
+The results of the Chi-Squared test reveal a highly significant finding, with a P value of $2.842\times10^{-9}$—considerably smaller than the commonly used threshold of 0.05. This small P value suggests a significant difference in the data. Additionally, the Chi-Squared statistic, standing at 35, surpasses the degrees of freedom (one) for this dataset. In this group, the likelihood of an unvaccinated individual contracting Covid is approximately 1 in 8.
+
 # Overall Results and Conclusions
