@@ -41,8 +41,8 @@ Looking at the data collected, this will be categorical explained by categorical
 ### Graphical Descriptive Results
 
 ```{r}
-barchartGC(~infected+treatment,data=male)
-barchartGC(~infected+treatment,data=male,type="percent")
+barchartGC(~infected + treatment,data=male)
+barchartGC(~infected + treatment,data=male, type="percent")
 ```
   
   The bar chart above shows the graphical outcomes for males, based on the collected data. It compares the rates of contracting Covid-19 as compared to vaccination status. The left shows people who contracted Covid-19 and the right shows men who have not. This clearly shows that more than twice the percentage of people who are in the placebo group contracted Covid where people who did not contract Covid are very closely related.
@@ -60,9 +60,9 @@ colPerc(tableMale)
 ### Inferential Results
 
 ```{r}
-chisq.test(male)
-chisqtestGC(male)
-maleFisher <- fisher.test(male)
+chisq.test(tableMale)
+chisqtestGC(tableMale)
+maleFisher <- fisher.test(tableMale)
 maleFisher
 ```
 
